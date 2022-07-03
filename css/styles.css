@@ -1,0 +1,256 @@
+:root {
+  /*Fonts*/
+  --main-font-family: "Roboto", sans-serif;
+
+  /*Colors*/
+  --main-dark-color: #000;
+  --main-light-color: #fff;
+  --current-color: #2196f3;
+  --main-color: #757575;
+  --secondary-color: #212121;
+  --background-dark-color: #2f303a;
+  --background-light-color: #e5e5e5;
+  --backgronud-button-color: #f5f4fa;
+}
+
+body {
+  font-family: var(--main-font-family);
+  font-size: 14;
+  font-weight: 400;
+  line-height: 1.71;
+  color: var(--main-color);
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 14;
+  font-weight: 500;
+  line-height: 1.14;
+  color: var(--secondary-color);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #2196f3;
+}
+
+.active {
+  color:var(--current-color);
+}
+.contact-nav-link {
+  text-decoration: none;
+  font-size: 14;
+  font-weight: 500;
+  line-height: 1.14;
+  color: var(--main-color);
+}
+
+.contact-nav-link:hover,
+.contact-nav-link:focus {
+  color: #2196f3;
+}
+
+.contact-footer-link {
+  text-decoration: none;
+  font-size: 14;
+  font-weight: 500;
+  line-height: 1.71;  
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-footer-link:hover,
+.contact-footer-link:focus {
+  color: #2196f3;
+}
+
+.main-logo {
+  text-decoration: none;
+  color: var(--main-dark-color);
+  font-family: "Raleway";
+  font-style: normal;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+}
+
+.footer-logo {
+  text-decoration: none;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--main-light-color);
+}
+
+span {
+  color: var(--current-color);
+}
+
+.hero-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  border: none;
+  padding: 0;
+  color: var(--backgronud-button-color);
+  background-color: var(--current-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  outline: 0;
+  cursor: pointer;
+
+}
+.hero-button:hover,
+.hero-button:focus {
+  color: var(--main-dark-color);
+  background-color: var(--backgronud-button-color)
+  
+}
+.button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  border: none;
+  padding: 0 ;
+  background-color: var(--backgronud-button-color);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--main-light-color);
+  background-color: var(--current-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  
+
+}
+
+.list {
+  list-style: none;
+}
+
+.gps-footer-link {
+  color: var(--main-light-color);
+    text-decoration: none;
+}
+
+.gps-footer-link:hover,
+.gps-footer-link:focus {
+  color: var(--current-color);
+  
+}
+
+.text-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.text-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--main-color);
+}
+
+
+.text-transform {
+  text-transform: uppercase;
+
+}
+
+.title-workcom {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  color: var(--secondary-color);
+}
+
+.section-hero {
+  background-color: var(--background-dark-color);
+  color: var(--main-light-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-transform: uppercase;
+}
+
+.section-heder {
+}
+
+.section-description {
+  background-color: var(--background-light-color);
+}
+
+.nav {
+}
+
+.contact-nav-link {
+}
+
+.section-filter {
+  background-color: var(--background-light-color);
+}
+
+.section-work {
+  background-color: var(--background-light-color);
+
+}
+
+.section-command {
+  background-color: var(--backgronud-button-color);
+}
+
+.section-footer {
+  background-color: var(--background-dark-color);
+}
+
+.name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--secondary-color);
+}
+
+.prof {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--main-color);
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.port-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  color: var(--secondary-color);
+}
+
+.port-name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--main-color)
+}
+
+.contact {
+  text-decoration: none;
+  font-style: normal;
+}
