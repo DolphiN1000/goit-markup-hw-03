@@ -35,7 +35,7 @@ body {
 }
 
 .active {
-  color:var(--current-color);
+  color: var(--current-color);
 }
 .contact-nav-link {
   text-decoration: none;
@@ -54,13 +54,21 @@ body {
   text-decoration: none;
   font-size: 14;
   font-weight: 500;
-  line-height: 1.71;  
+  line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .contact-footer-link:hover,
 .contact-footer-link:focus {
   color: #2196f3;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+ /* background-color: tomato;*/
 }
 
 .main-logo {
@@ -88,31 +96,32 @@ span {
 }
 
 .hero-button {
+  min-width: 200px;
+  min-height: 50;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   border: none;
-  padding: 0;
+  padding: 10px 32px;
   color: var(--backgronud-button-color);
   background-color: var(--current-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   outline: 0;
   cursor: pointer;
-
 }
 .hero-button:hover,
 .hero-button:focus {
   color: var(--main-dark-color);
-  background-color: var(--backgronud-button-color)
-  
+  background-color: var(--backgronud-button-color);
 }
 .button {
+  padding: 10px 32px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   border: none;
-  padding: 0 ;
+  padding: 0;
   background-color: var(--backgronud-button-color);
   border-radius: 4px;
   cursor: pointer;
@@ -124,23 +133,23 @@ span {
   background-color: var(--current-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  
-
 }
 
 .list {
+  margin: 0;
   list-style: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .gps-footer-link {
   color: var(--main-light-color);
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .gps-footer-link:hover,
 .gps-footer-link:focus {
   color: var(--current-color);
-  
 }
 
 .text-title {
@@ -157,20 +166,28 @@ span {
   color: var(--main-color);
 }
 
-
 .text-transform {
   text-transform: uppercase;
-
 }
 
 .title-workcom {
+  margin-top: 0;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   color: var(--secondary-color);
+  text-align: center;
+}
+
+.hero {
+  display: inline-block;
+  margin-top: 94px;
 }
 
 .section-hero {
+  /*margin-top: 94px;
+  margin-bottom: 94px;
+*/
   background-color: var(--background-dark-color);
   color: var(--main-light-color);
   font-weight: 900;
@@ -178,31 +195,35 @@ span {
   line-height: 1.36;
   text-transform: uppercase;
 }
-
+/*
 .section-heder {
 }
-
+*/
 .section-description {
   background-color: var(--background-light-color);
 }
 
-.nav {
+.section-description > h2 {
+  text-align: center;
+}
+
+/*.nav {
 }
 
 .contact-nav-link {
 }
-
+*/
 .section-filter {
   background-color: var(--background-light-color);
 }
 
 .section-work {
   background-color: var(--background-light-color);
-
 }
 
 .section-command {
   background-color: var(--backgronud-button-color);
+  text-align: center;
 }
 
 .section-footer {
@@ -247,10 +268,11 @@ span {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
-  color: var(--main-color)
+  color: var(--main-color);
 }
 
 .contact {
   text-decoration: none;
   font-style: normal;
+  
 }
