@@ -21,6 +21,17 @@ body {
   color: var(--main-color);
 }
 
+h1, h2, h3, h4,h5, h6 {
+  margin: 0;
+}
+a {}
+.container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+ /* background-color: tomato;*/
+}
 .nav-link {
   text-decoration: none;
   font-size: 14;
@@ -63,15 +74,31 @@ body {
   color: #2196f3;
 }
 
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
- /* background-color: tomato;*/
+
+.container-heder {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+
+}
+
+.site-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+}
+.contact-nav {
+  display: flex;
+  flex-direction: row;
 }
 
 .main-logo {
+  /* display: inline-block; */
   text-decoration: none;
   color: var(--main-dark-color);
   font-family: "Raleway";
@@ -79,6 +106,9 @@ body {
   font-size: 26px;
   font-weight: 700;
   line-height: 1.19;
+  text-align: center;
+  padding: 0;
+  
 }
 
 .footer-logo {
@@ -91,9 +121,13 @@ body {
   color: var(--main-light-color);
 }
 
-span {
+/* span {
+  color: var(--current-color);
+} */
+.logo-color{
   color: var(--current-color);
 }
+
 
 .hero-button {
   min-width: 200px;
@@ -103,6 +137,7 @@ span {
   line-height: 1.87;
   border: none;
   padding: 10px 32px;
+  
   color: var(--backgronud-button-color);
   background-color: var(--current-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -140,6 +175,7 @@ span {
   list-style: none;
   padding-top: 32px;
   padding-bottom: 32px;
+  padding-left: 0;
 }
 
 .gps-footer-link {
@@ -185,15 +221,15 @@ span {
 }
 
 .section-hero {
-  /*margin-top: 94px;
-  margin-bottom: 94px;
-*/
+  padding-top: 200px;
+  padding-bottom: 200px;  
   background-color: var(--background-dark-color);
   color: var(--main-light-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-transform: uppercase;
+  text-align: center;
+
 }
 /*
 .section-heder {
@@ -201,11 +237,14 @@ span {
 */
 .section-description {
   background-color: var(--background-light-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+
 }
 
-.section-description > h2 {
+/* .section-description > h2 {
   text-align: center;
-}
+} */
 
 /*.nav {
 }
