@@ -323,10 +323,13 @@ margin-right: 0;
   text-align: center;
 
 }
-/*
+
 .section-heder {
+  border-bottom: 1px solid #ececec;
+  /* border-style:inset;
+  border: 10px #000000; */
 }
-*/
+
 .section-description {
   background-color: var(--background-light-color);
   padding-top: 94px;
