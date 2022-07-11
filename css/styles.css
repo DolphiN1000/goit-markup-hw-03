@@ -375,7 +375,7 @@ margin-right: 0;
 }
 
 .section-footer {
-  width: 100%;
+  /*width: 100%;*/
   display: flex;
   background-color: var(--background-dark-color);
   height: 252px;
