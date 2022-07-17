@@ -11,6 +11,8 @@
   --background-dark-color: #2f303a;
   --background-light-color: #e5e5e5;
   --backgronud-button-color: #f5f4fa;
+  --button-hero-hover-color: #188CE8;
+  --header-border-color: #ececec;
 }
 
 body {
@@ -31,19 +33,19 @@ img {
 display: block;
 max-width: 100%;
 height: auto;
-
 }
 
 address {
   font-style: normal;
 }
 
-/* a  {
-  text-align: center;
-} */
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color:inherit;
 }
 
 .container {
@@ -51,20 +53,24 @@ address {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
- /* background-color: tomato;*/
 }
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+
 
 .list {
   margin: 0;
-  list-style: none;
   padding-top: 0px;
   padding-bottom: 0px;
   padding-left: 0;
 }
 
 .link {
-  text-decoration: none;
-  color: inherit;
+
 }
 
 h1 {
@@ -74,7 +80,29 @@ h1 {
   line-height: 1.36;
 }
 
-.container-heder {
+button {
+  min-width: 73px;
+  min-height: 38px;
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  border: none;
+  background-color: var(--backgronud-button-color);
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+button:hover,
+button:focus {
+  color: var(--main-light-color);
+  background-color: var(--current-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.header-container {
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -87,8 +115,6 @@ h1 {
 
 .nav-link {
   margin-right: 50px;
-  text-decoration: none;
-  /* font-size: 14; */
   font-weight: 500;
   line-height: 1.14;
   color: var(--secondary-color);
@@ -96,14 +122,13 @@ h1 {
 
 .nav-link:hover,
 .nav-link:focus {
-  color: #2196f3;
+  color: var(--current-color);
 }
 
 .active {
   color: var(--current-color);
 }
 .contact-nav-link {
-  text-decoration: none;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -112,11 +137,10 @@ h1 {
 
 .contact-nav-link:hover,
 .contact-nav-link:focus {
-  color: #2196f3;
+  color: var(--current-color);
 }
 
 .contact-footer-link {
-  text-decoration: none;
   font-size: 14;
   font-weight: 500;
   line-height: 1.71;
@@ -125,12 +149,12 @@ h1 {
 
 .contact-footer-link:hover,
 .contact-footer-link:focus {
-  color: #2196f3;
+  color: var(--current-color);
 }
 
 
 
-.site-nav {
+.header-nav-site {
   margin-right: auto;
   display: flex;
   flex-direction: row;
@@ -148,8 +172,6 @@ h1 {
 }
 
 .main-logo {
-  /* display: inline-block; */
-  text-decoration: none;
   color: var(--main-dark-color);
   font-family: "Raleway";
   font-style: normal;
@@ -167,7 +189,6 @@ h1 {
 }
 
 .footer-logo {
-  text-decoration: none;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -192,13 +213,9 @@ h1 {
   /* margin-top: 94px; */
   /* margin-bottom: 94px; */
 }
-.port-work {
+.portfolio-item {
   width: 370px;
   height: 404px;
-  margin-left: 0;
-  margin-right: 30px;
-  margin-bottom: 30px;
-  /* border: 1px, #eeeeee; */
   background: #FFFFFF;
   border: 1px solid rgba(238, 238, 238, 1);
 }
@@ -233,31 +250,10 @@ margin-right: 0;
   /* background-color: var(--backgronud-button-color); */
   background-color: #188CE8;
 }
-.button {
-  min-width: 73px;
-  min-height: 38px;
-  padding: 6px 22px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  border: none;
-  background-color: var(--backgronud-button-color);
-  border-radius: 4px;
-  cursor: pointer;
-  margin-left: 8px;
-}
 
-.button:hover,
-.button:focus {
-  color: var(--main-light-color);
-  background-color: var(--current-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
 
-.list-header {
+.header-list {
   margin: 0;
-  list-style: none;
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 0;
@@ -266,7 +262,6 @@ margin-right: 0;
 
 .list-description {
   margin-bottom: 94px;
-  list-style: none;
   padding-top: 0px;
   padding-bottom: 0px;
   padding-left: 0;
@@ -278,7 +273,6 @@ margin-right: 0;
   flex-direction: row;
   justify-content: space-between;
   margin: 0;
-  list-style: none;
   padding-top: 0px;
   padding-bottom: 0px;
   padding-left: 0;
@@ -289,15 +283,12 @@ margin-right: 0;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-
-
+  gap: 30px;
   background-color: var(--main-light-color);
-  list-style: none;
 }
 
 .gps-footer-link {
   color: var(--main-light-color);
-  text-decoration: none;
 }
 
 .gps-footer-link:hover,
@@ -310,6 +301,8 @@ margin-right: 0;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  color: var(--secondary-color);
+  margin-bottom: 10px;
 }
 
 .text-description {
@@ -319,6 +312,9 @@ margin-right: 0;
   color: var(--main-color);
 }
 
+.description-list {
+  gap: 30px;
+}
 .text-transform {
   text-transform: uppercase;}
 
@@ -326,10 +322,6 @@ margin-right: 0;
 .title-workcom {
   margin-top: 0px;
   margin-bottom: 50px;
-  /* padding-top: 94px; */
-  /* margin-left: auto;
-  margin-right: auto; */
-  /* padding-bottom: 50px; */
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -339,7 +331,6 @@ margin-right: 0;
 
 .hero {
   width: 696px; 
-  /* margin-top: 94px; */
   margin: 0 auto;
   margin-bottom: 30px;
   font-weight: 900;
@@ -352,15 +343,11 @@ margin-right: 0;
   padding-top: 200px;
   padding-bottom: 200px;  
   background-color: var(--background-dark-color);
-
   text-align: center;
-
 }
 
-.section-heder {
-  border-bottom: 1px solid #ececec;
-  /* border-style:inset;
-  border: 10px #000000; */
+.header-section {
+  border-bottom: 1px solid var(--header-border-color);
 }
 
 .section-description {
@@ -383,8 +370,12 @@ margin-right: 0;
 }
 
 .list-buttons {
-  padding-bottom: 50px;
-  list-style: none;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  margin-bottom: 50px;
+  gap: 8px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -435,18 +426,18 @@ margin-right: 0;
   overflow: hidden;
 }
 
-.port-title {
-  margin: 0;
-  padding: 20px 24px 4px 24px;
+.portfolio-content{
+  padding: 20px 24px;
+}
+
+.portfolio-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   color: var(--secondary-color);
 }
 
-.port-name {
-  margin: 0;
-  padding: 4px 24px 20px 24px;
+.portfolio-name {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
@@ -454,7 +445,6 @@ margin-right: 0;
 }
 
 .contact {
-  text-decoration: none;
   font-style: normal;
   
 }
