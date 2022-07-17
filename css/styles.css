@@ -16,29 +16,64 @@
 body {
   font-family: var(--main-font-family);
   font-size: 14px;
-  font-weight: 400;
-  line-height: 1.71;
+  /* font-weight: 400; */
+  /* line-height: 1.71; */
+  letter-spacing: 0.03em;
   color: var(--main-color);
   background-color: var(--main-light-color);
 }
 
-/* h1, h2, h3, h4,h5, h6 {
+h1, h2, h3, h4,h5, h6, p {
   margin: 0;
-} */
+}
+
+img {
+display: block;
+max-width: 100%;
+height: auto;
+
+}
+
+address {
+  font-style: normal;
+}
+
 /* a  {
   text-align: center;
 } */
-.container {
-  width: 1200px;
-  /* max-width: 1200px; */
-  /* width: 100%; */
-  padding-left: 15px;
-  padding-right: 15px;
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
  /* background-color: tomato;*/
 }
+
+.list {
+  margin: 0;
+  list-style: none;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  color: var(--main-light-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+}
+
 .container-heder {
   display: flex;
   flex-direction: row;
@@ -53,7 +88,7 @@ body {
 .nav-link {
   margin-right: 50px;
   text-decoration: none;
-  font-size: 14;
+  /* font-size: 14; */
   font-weight: 500;
   line-height: 1.14;
   color: var(--secondary-color);
@@ -228,13 +263,6 @@ margin-right: 0;
   padding-left: 0;
 }
 
-.list {
-  margin: 0;
-  list-style: none;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0;
-}
 
 .list-description {
   margin-bottom: 94px;
@@ -310,8 +338,10 @@ margin-right: 0;
 }
 
 .hero {
-  /* width: 696px;  */
-  margin-top: 94px;
+  width: 696px; 
+  /* margin-top: 94px; */
+  margin: 0 auto;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -322,10 +352,7 @@ margin-right: 0;
   padding-top: 200px;
   padding-bottom: 200px;  
   background-color: var(--background-dark-color);
-  color: var(--main-light-color);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+
   text-align: center;
 
 }
@@ -375,7 +402,6 @@ margin-right: 0;
 }
 
 .section-footer {
-  /*width: 100%;*/
   display: flex;
   background-color: var(--background-dark-color);
   height: 252px;
