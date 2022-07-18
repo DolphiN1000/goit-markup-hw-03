@@ -15,25 +15,28 @@
     />
   </head>
   <body>
-    <header class="section-heder">
-      <div class="container-heder">
-        <nav class="site-nav">
+    <header class="header-section">
+      <div class="header-container">
+        <nav class="header-nav-site">
           <a class="main-logo" lang="en" href="./index.html"
             ><span class="logo-color">Web</span>Studio</a
           >
-          <ul class="list-header nav-list">
-            <li><a class="nav-link active" href="./index.html">Студия</a></li>
-            <li><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
-            <li><a class="nav-link" href="">Контакты</a></li>
+          <ul class="header-list nav-list list">
+            <li class="nav-item">
+              <a class="nav-link active" href="./index.html">Студия</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="./portfolio.html">Портфолио</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="list-header contact-nav">
-          <li class="contact-list">
+        <ul class="header-list contact-nav list">
+          <li class="contact-item">
             <a class="contact-nav-link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="contact-item">
             <a class="contact-nav-link" href="tel:+380961111111"
               >+38 096 111 11 11</a
             >
@@ -42,7 +45,7 @@
       </div>
     </header>
     <main>
-      <section class="section-hero">
+      <section class="hero-section">
         <div class="container">
           <h1 class="text-transform hero">
             Эффективные решения для вашего бизнеса
@@ -50,10 +53,11 @@
           <button class="hero-button" type="button">Заказать услугу</button>
         </div>
       </section>
-      <section class="section section-description">
-        <div class="container">
-          <h2 class="visually-hidden">Особенности</h2>
-          <ul class="list-description list-whot-can">
+      <section class="section">
+         <div class="container section-description">
+        
+           <h2 class="visually-hidden">Особенности</h2>
+           <ul class="description-item list-whot-can list">
             <li class="description-list">
               <h3 class="text-title">Внимание к деталям</h3>
               <p class="text-description">
@@ -83,8 +87,12 @@
               </p>
             </li>
           </ul>
-          <h2 class="title-workcom">Чем мы занимаемся</h2>
-          <ul class="list-workcom">
+        </div>
+      <!-- </section>
+      <section class="section"> -->
+          <div class="container">
+        <h2 class="title-workcom title">Чем мы занимаемся</h2>
+          <ul class="list-workcom list">
             <li>
               <img
                 src="./images/about-programer.jpg"
@@ -114,8 +122,8 @@
       </section>
       <section class="section section-command">
         <div class="container">
-          <h2 class="title-workcom">Наша команда</h2>
-          <ul class="list-workcom">
+          <h2 class="title-workcom title">Наша команда</h2>
+          <ul class="list-workcom list">
             <li class="workcom">
               <img
                 src="./images/Igor-Demyanenko.jpg"
@@ -123,8 +131,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="name">Игорь Демьяненко</h3>
-              <p class="prof" lang="en">Product Designer</p>
+              <div class="name-prof">
+                <h3 class="name">Игорь Демьяненко</h3>
+                <p class="prof" lang="en">Product Designer</p>
+              </div>
             </li>
             <li class="workcom">
               <img
@@ -133,8 +143,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="name">Ольга Репина</h3>
-              <p class="prof" lang="en">Frontend Developer</p>
+              <div class="name-prof">
+                <h3 class="name">Ольга Репина</h3>
+                <p class="prof" lang="en">Frontend Developer</p>
+              </div>
             </li>
             <li class="workcom">
               <img
@@ -143,8 +155,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="name">Николай Тарасов</h3>
-              <p class="prof" lang="en">Marketing</p>
+              <div class="name-prof">
+                <h3 class="name">Николай Тарасов</h3>
+                <p class="prof" lang="en">Marketing</p>
+              </div>
             </li>
             <li class="workcom">
               <img
@@ -153,21 +167,23 @@
                 width="270"
                 height="260"
               />
-              <h3 class="name">Михаил Ермаков</h3>
-              <p class="prof" lang="en">UI Designer</p>
+              <div class="name-prof">
+                <h3 class="name">Михаил Ермаков</h3>
+                <p class="prof" lang="en">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
     </main>
-    <footer class="section-footer">
-      <div class="container">
+    <footer class="footer-section">
+      <div class="container footer-container">
         <a class="footer-logo" lang="en" href="./index.html"
           ><span class="logo-color">Web</span>Studio</a
         >
         <address class="contact">
           <ul class="list">
-            <li>
+            <li class="footer-contact-item">
               <a
                 class="gps-footer-link"
                 href="https://goo.gl/maps/VRm5s5utbLu2678L6"
@@ -176,12 +192,12 @@
                 >г. Киев, пр-т Леси Украинки, 26</a
               >
             </li>
-            <li>
+            <li class="footer-contact-item">
               <a class="contact-footer-link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="footer-contact-item">
               <a class="contact-footer-link" href="tel:+380961111111"
                 >+38 096 111 11 11</a
               >
