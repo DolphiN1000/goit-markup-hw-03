@@ -65,17 +65,9 @@ a {
   margin: 0 auto;
 }
 
-.footer-container {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.link {
 }
 
 h1 {
@@ -86,8 +78,6 @@ h1 {
 }
 
 button {
-  min-width: 73px;
-  min-height: 38px;
   padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
@@ -98,8 +88,8 @@ button {
   cursor: pointer;
 }
 
-button:hover,
-button:focus {
+.button:hover,
+.button:focus {
   color: var(--main-light-color);
   background-color: var(--current-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -124,7 +114,7 @@ button:focus {
 }
 
 .nav-item + .nav-item {
-  padding-left: 50px;
+  margin-left: 50px;
 }
 
 .nav-link:hover,
@@ -220,25 +210,20 @@ button:focus {
 
 .hero-button {
   min-width: 200px;
-  min-height: 50px;
   font-weight: 700;
-  font-size: 16px;
   line-height: 1.88;
-  border: none;
+  letter-spacing: 0.06em;
   padding: 10px 32px;
   color: var(--backgronud-button-color);
   background-color: var(--current-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   outline: 0;
-  cursor: pointer;
 }
 
 .hero-button:hover,
 .hero-button:focus {
   color: var(--main-dark-color);
-  /* background-color: var(--backgronud-button-color); */
-  background-color: #188ce8;
+  background-color: var(--button-hero-hover-color);
 }
 
 .header-list {
@@ -249,7 +234,6 @@ button:focus {
 
 .description-item {
   gap: 30px;
-  margin-bottom: 94px;
 }
 
 .list-workcom {
@@ -316,6 +300,7 @@ button:focus {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+  letter-spacing: 0.06em;
   text-align: center;
 }
 
@@ -330,16 +315,8 @@ button:focus {
   border-bottom: 1px solid var(--header-border-color);
 }
 
-.section-description {
-  /* background-color: var(--background-light-color); */
-}
-
-/*.nav {
-}
-
-*/
-.section-filter {
-  /* background-color: var(--background-light-color); */
+.section-workcom {
+  padding-top: 0px;
 }
 
 .list-buttons {
@@ -347,12 +324,11 @@ button:focus {
   margin-left: auto;
   margin-right: auto;
   padding: 0;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   gap: 8px;
+  letter-spacing: 0.03em;
   display: flex;
-  /* flex-direction: row; */
   justify-content: center;
-  /* background-color: var(--main-light-color); */
 }
 
 .section-work {
@@ -364,10 +340,8 @@ button:focus {
 }
 
 .footer-section {
-  /* display: flex; */
+  padding: 60px 0;
   background-color: var(--background-dark-color);
-  /* height: 252px; */
-  /* align-items: center; */
 }
 
 .name {
@@ -410,6 +384,7 @@ button:focus {
 }
 
 .portfolio-title {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -428,7 +403,7 @@ button:focus {
 }
 
 .title {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .workcom {
