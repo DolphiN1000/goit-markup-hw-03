@@ -82,6 +82,7 @@ button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  letter-spacing: 0.03em;
   border: none;
   background-color: var(--backgronud-button-color);
   border-radius: 4px;
@@ -326,7 +327,6 @@ button {
   padding: 0;
   margin-bottom: 50px;
   gap: 8px;
-  letter-spacing: 0.03em;
   display: flex;
   justify-content: center;
 }
